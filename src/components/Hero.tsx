@@ -87,7 +87,7 @@ export function Hero() {
               transition={{ duration: 3, repeat: Infinity }}
             />
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwxfHx8fDE3NjMzMTU0NjV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              src=""
               alt="Profile"
               className="relative w-40 h-40 rounded-full object-cover border-4 border-blue-500/50 shadow-2xl"
             />
@@ -102,7 +102,7 @@ export function Hero() {
         >
           Bonjour, je suis{" "}
           <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-            Alex Dubois
+            Koffi Ambroise ENOH
           </span>
         </motion.h1>
 
@@ -170,8 +170,12 @@ export function Hero() {
           className="flex gap-6 justify-center mb-16"
         >
           {[
-            { icon: Github, href: "#", label: "GitHub" },
-            { icon: Linkedin, href: "#", label: "LinkedIn" },
+            { icon: Github, href: "https://github.com/EnohK", label: "GitHub" },
+            {
+              icon: Linkedin,
+              href: "https://www.linkedin.com/in/ambroise-enoh-0b9a12269?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+              label: "LinkedIn",
+            },
             { icon: Mail, href: "#contact", label: "Contact" },
           ].map((social, index) => (
             <motion.a

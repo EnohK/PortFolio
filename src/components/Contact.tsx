@@ -22,21 +22,21 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "alex.dubois@example.com",
-      href: "mailto:alex.dubois@example.com",
+      value: "ambroise.enoh@epitech.eu",
+      href: "ambroise.enoh@epitech.eu",
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: Phone,
       title: "Téléphone",
-      value: "+33 6 12 34 56 78",
-      href: "tel:+33612345678",
+      value: "+225 05 65 24 66 45",
+      href: "tel:+2250565246645",
       color: "from-purple-500 to-pink-500",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Paris, France",
+      value: "Abidjan, Côte D'ivoire",
       href: "#",
       color: "from-green-500 to-emerald-500",
     },
@@ -64,7 +64,10 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-24 bg-slate-950 overflow-hidden">
+    <section
+      id="contact"
+      className="relative py-24 bg-slate-950 overflow-hidden"
+    >
       {/* Animated background */}
       <motion.div
         className="absolute top-20 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
@@ -89,7 +92,8 @@ export function Contact() {
             </span>
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            Une question, un projet ou simplement envie de discuter ? N'hésitez pas à me contacter
+            Une question, un projet ou simplement envie de discuter ? N'hésitez
+            pas à me contacter
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4" />
         </motion.div>
@@ -105,8 +109,8 @@ export function Contact() {
             <div>
               <h3 className="text-white mb-6">Informations de contact</h3>
               <p className="text-slate-400 mb-8">
-                Je suis toujours ouvert à de nouvelles opportunités et collaborations.
-                Contactez-moi via l'un des moyens ci-dessous.
+                Je suis toujours ouvert à de nouvelles opportunités et
+                collaborations. Contactez-moi via l'un des moyens ci-dessous.
               </p>
             </div>
 
@@ -137,7 +141,7 @@ export function Contact() {
             ))}
 
             {/* Map placeholder */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -147,7 +151,7 @@ export function Contact() {
                 <MapPin className="h-12 w-12 text-blue-400" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5" />
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Contact Form */}
@@ -162,7 +166,10 @@ export function Contact() {
             >
               <div className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-slate-300 mb-2 text-sm">
+                  <label
+                    htmlFor="name"
+                    className="block text-slate-300 mb-2 text-sm"
+                  >
                     Nom complet
                   </label>
                   <Input
@@ -177,7 +184,10 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-slate-300 mb-2 text-sm">
+                  <label
+                    htmlFor="email"
+                    className="block text-slate-300 mb-2 text-sm"
+                  >
                     Email
                   </label>
                   <Input
@@ -193,7 +203,10 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-slate-300 mb-2 text-sm">
+                  <label
+                    htmlFor="subject"
+                    className="block text-slate-300 mb-2 text-sm"
+                  >
                     Sujet
                   </label>
                   <Input
@@ -208,7 +221,10 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-slate-300 mb-2 text-sm">
+                  <label
+                    htmlFor="message"
+                    className="block text-slate-300 mb-2 text-sm"
+                  >
                     Message
                   </label>
                   <Textarea
@@ -223,7 +239,10 @@ export function Contact() {
                   />
                 </div>
 
-                <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
                   <Button
                     type="submit"
                     disabled={isSubmitting}
@@ -234,7 +253,11 @@ export function Contact() {
                         <motion.div
                           className="mr-2 h-4 w-4 border-2 border-white border-t-transparent rounded-full"
                           animate={{ rotate: 360 }}
-                          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                          transition={{
+                            duration: 1,
+                            repeat: Infinity,
+                            ease: "linear",
+                          }}
                         />
                         Envoi en cours...
                       </>

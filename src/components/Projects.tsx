@@ -12,10 +12,11 @@ export function Projects() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Free ADS",
       description:
         "Plateforme e-commerce complète avec paiement sécurisé, gestion de stock et tableau de bord administrateur.",
-      image: "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjg0Mzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image:
+        "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjg0Mzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind"],
       demoUrl: "#",
       githubUrl: "#",
@@ -24,7 +25,8 @@ export function Projects() {
       title: "Task Management App",
       description:
         "Application de gestion de tâches collaborative avec système de notifications en temps réel et calendrier intégré.",
-      image: "https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYzMzA1ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image:
+        "https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYzMzA1ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       technologies: ["Vue.js", "Firebase", "TypeScript", "Vuetify"],
       demoUrl: "#",
       githubUrl: "#",
@@ -33,7 +35,8 @@ export function Projects() {
       title: "Social Media Dashboard",
       description:
         "Dashboard d'analyse pour réseaux sociaux avec graphiques interactifs et rapports automatisés.",
-      image: "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzYzMzg1MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image:
+        "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzYzMzg1MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       technologies: ["React", "D3.js", "Express", "PostgreSQL"],
       demoUrl: "#",
       githubUrl: "#",
@@ -42,7 +45,8 @@ export function Projects() {
       title: "AI Chat Assistant",
       description:
         "Assistant conversationnel alimenté par IA avec interface moderne et support multilingue.",
-      image: "https://images.unsplash.com/photo-1759322945173-76b604965b2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBzZXR1cCUyMG1vZGVybnxlbnwxfHx8fDE3NjMzOTY3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image:
+        "https://images.unsplash.com/photo-1759322945173-76b604965b2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBzZXR1cCUyMG1vZGVybnxlbnwxfHx8fDE3NjMzOTY3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       technologies: ["Next.js", "OpenAI", "Prisma", "TailwindCSS"],
       demoUrl: "#",
       githubUrl: "#",
@@ -51,7 +55,8 @@ export function Projects() {
       title: "Portfolio Generator",
       description:
         "Générateur de portfolio automatique avec templates personnalisables et export en PDF.",
-      image: "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjg0Mzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image:
+        "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjg0Mzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       technologies: ["Angular", "NestJS", "MySQL", "Docker"],
       demoUrl: "#",
       githubUrl: "#",
@@ -60,7 +65,8 @@ export function Projects() {
       title: "Weather Forecast App",
       description:
         "Application météo avec prévisions détaillées, cartes interactives et alertes personnalisées.",
-      image: "https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYzMzA1ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image:
+        "https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYzMzA1ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       technologies: ["React Native", "Redux", "Weather API"],
       demoUrl: "#",
       githubUrl: "#",
@@ -68,7 +74,10 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="relative py-24 bg-slate-950 overflow-hidden">
+    <section
+      id="projects"
+      className="relative py-24 bg-slate-950 overflow-hidden"
+    >
       {/* Animated background gradient */}
       <motion.div
         className="absolute top-40 left-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
@@ -210,7 +219,7 @@ export function Projects() {
         </div>
 
         {/* View more button */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -224,7 +233,7 @@ export function Projects() {
             Voir tous les projets
             <ExternalLink className="ml-2 h-4 w-4" />
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

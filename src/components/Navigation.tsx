@@ -61,9 +61,9 @@ export function Navigation() {
               whileTap={{ scale: 0.95 }}
             >
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white">AD</span>
+                <span className="text-white">AE</span>
               </div>
-              <span className="text-white hidden sm:block">Alex Dubois</span>
+              <span className="text-white hidden sm:block">Koffi Ambroise ENOH</span>
             </motion.a>
 
             {/* Desktop Navigation */}

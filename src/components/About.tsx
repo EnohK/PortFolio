@@ -8,10 +8,32 @@ export function About() {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const timeline = [
-    { year: "2023", title: "Lead Developer", company: "Tech Innovators" },
-    { year: "2021", title: "Full Stack Developer", company: "Digital Solutions" },
-    { year: "2019", title: "Junior Developer", company: "StartUp Lab" },
-    { year: "2018", title: "Diplôme d'Ingénieur", company: "École Polytechnique" },
+    {
+      year: "2025",
+      title: "Certificat Developpeur Full-Stack ",
+      company: "WE.CODE",
+    },
+    {
+      year: "2023-2024",
+      title: "LICENCE PROFESSIONNELLE GENIE LOGICIEL",
+      company: "HEC/GECOS FORMATION",
+    },
+    {
+      year: "2022-2023",
+      title: "SERVICE ACCESS AND APPLICATION SUPPORT",
+      company: "MTN CÔTE D'IVOIRE",
+    },
+    {
+      year: "2021-2022",
+      title:
+        "BREVET DE TECHNICIEN SUPPERIEUR EN  INFORMATIQUE ET DEVELOPPEUR D'APPLICATION",
+      company: "GROUPE ISTEMA",
+    },
+    {
+      year: "2019-2020",
+      title: "BACCALAUREAT SERIE C",
+      company: "LYCEE MUNICIPAL II ATTECOUBE",
+    },
   ];
 
   const values = [
@@ -79,10 +101,12 @@ export function About() {
           >
             <h3 className="text-white">Mon parcours</h3>
             <p className="text-slate-300 leading-relaxed">
-              Développeur passionné avec plus de 5 ans d'expérience dans la
-              création d'applications web modernes et performantes. J'ai eu la
-              chance de travailler sur des projets variés, allant des startups
-              innovantes aux grandes entreprises.
+              Je m’appelle Ambroise Koffi ENOH, <br /> développeur full-stack
+              passionné par la création de solutions web et mobiles
+              performantes, intuitives et centrées sur l’utilisateur. Mon
+              parcours est guidé par une curiosité constante, l’envie
+              d’apprendre et le désir de transformer des idées en projets
+              concrets et utiles.
             </p>
             <p className="text-slate-300 leading-relaxed">
               Ma philosophie est simple : créer des solutions élégantes qui
@@ -90,9 +114,11 @@ export function About() {
               de l'expérience utilisateur et de la qualité du code.
             </p>
             <p className="text-slate-300 leading-relaxed">
-              Actuellement, je me spécialise dans React, Node.js et les
-              architectures cloud modernes. Je suis toujours en quête
-              d'apprentissage et de nouveaux défis.
+              Après un BTS en Informatique, j’ai poursuivi une Licence
+              Professionnelle en Génie Logiciel, puis une certification
+              full-stack chez We.Code. Ces formations m’ont permis de construire
+              une base technique solide et polyvalente, couvrant l’ensemble du
+              cycle de développement d’une application.
             </p>
           </motion.div>
 
@@ -103,7 +129,7 @@ export function About() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-6"
           >
-            <h3 className="text-white mb-8">Timeline</h3>
+            <h3 className="text-white mb-8">Chronologie</h3>
             <div className="relative">
               {/* Timeline line */}
               <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600" />
