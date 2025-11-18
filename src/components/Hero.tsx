@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Download, ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
+import image from "@/assets/enoh_image.jpeg";
 
 export function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -87,7 +88,7 @@ export function Hero() {
               transition={{ duration: 3, repeat: Infinity }}
             />
             <img
-              src=""
+              src={image}
               alt="Profile"
               className="relative w-40 h-40 rounded-full object-cover border-4 border-blue-500/50 shadow-2xl"
             />

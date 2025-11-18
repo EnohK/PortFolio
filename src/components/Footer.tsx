@@ -5,10 +5,30 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub", color: "hover:text-purple-400" },
-    { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:text-blue-400" },
-    { icon: Twitter, href: "#", label: "Twitter", color: "hover:text-cyan-400" },
-    { icon: Mail, href: "#contact", label: "Email", color: "hover:text-pink-400" },
+    {
+      icon: Github,
+      href: "#",
+      label: "GitHub",
+      color: "hover:text-purple-400",
+    },
+    {
+      icon: Linkedin,
+      href: "#",
+      label: "LinkedIn",
+      color: "hover:text-blue-400",
+    },
+    {
+      icon: Twitter,
+      href: "#",
+      label: "Twitter",
+      color: "hover:text-cyan-400",
+    },
+    {
+      icon: Mail,
+      href: "#contact",
+      label: "Email",
+      color: "hover:text-pink-400",
+    },
   ];
 
   const footerLinks = [
@@ -24,8 +44,7 @@ export function Footer() {
     {
       title: "Ressources",
       links: [
-        { name: "Blog", href: "#blog" },
-        { name: "Témoignages", href: "#testimonials" },
+        //{ name: "Blog", href: "#blog" },
         { name: "CV", href: "#" },
         { name: "Portfolio PDF", href: "#" },
       ],
@@ -88,8 +107,9 @@ export function Footer() {
                 <span className="text-white">Alex Dubois</span>
               </div>
               <p className="text-slate-400 mb-6 max-w-sm leading-relaxed">
-                Développeur Full Stack passionné par la création d'expériences digitales
-                innovantes et performantes. Toujours en quête de nouveaux défis.
+                Développeur Full Stack passionné par la création d'expériences
+                digitales innovantes et performantes. Toujours en quête de
+                nouveaux défis.
               </p>
 
               {/* Social links */}
@@ -149,8 +169,8 @@ export function Footer() {
             className="text-slate-400 text-sm flex items-center gap-2"
           >
             © {currentYear} Alex Dubois. Fait avec{" "}
-            <Heart className="h-4 w-4 text-red-500 fill-red-500 inline animate-pulse" /> et beaucoup
-            de code
+            <Heart className="h-4 w-4 text-red-500 fill-red-500 inline animate-pulse" />{" "}
+            et beaucoup de code
           </motion.p>
 
           <motion.div

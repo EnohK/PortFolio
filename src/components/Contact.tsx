@@ -5,7 +5,7 @@ import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 
 export function Contact() {
   const ref = useRef(null);
@@ -23,7 +23,7 @@ export function Contact() {
       icon: Mail,
       title: "Email",
       value: "ambroise.enoh@epitech.eu",
-      href: "ambroise.enoh@epitech.eu",
+      href: "email:ambroise.enoh@epitech.eu",
       color: "from-blue-500 to-cyan-500",
     },
     {

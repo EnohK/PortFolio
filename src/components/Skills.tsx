@@ -1,8 +1,14 @@
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
-import { Code2, Database, Layout, Server, Smartphone, Cloud } from "lucide-react";
-import { Progress } from "./ui/progress";
+import {
+  Code2,
+  Database,
+  Layout,
+  Server,
+  Smartphone,
+  Cloud,
+} from "lucide-react";
 
 export function Skills() {
   const ref = useRef(null);
@@ -14,10 +20,11 @@ export function Skills() {
       title: "Frontend",
       color: "from-blue-500 to-cyan-500",
       skills: [
-        { name: "React / Next.js", level: 95 },
+        { name: "React Js / Next.js", level: 95 },
+        { name: "Vue.js", level: 95 },
         { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "Vue.js", level: 85 },
+        { name: "Tailwind CSS", level: 95 },
+        { name: "Bootstrap CSS", level: 94 },
       ],
     },
     {
@@ -25,9 +32,10 @@ export function Skills() {
       title: "Backend",
       color: "from-purple-500 to-pink-500",
       skills: [
-        { name: "Node.js / Express", level: 88 },
-        { name: "Python / Django", level: 82 },
-        { name: "GraphQL", level: 80 },
+        { name: "Node.js / Express / Nest Js", level: 90 },
+        { name: "PHP / Laravel", level: 88 },
+        { name: "Python / Flask", level: 85 },
+        { name: "Python / Django", level: 70 },
         { name: "REST APIs", level: 93 },
       ],
     },
@@ -36,33 +44,22 @@ export function Skills() {
       title: "Database",
       color: "from-green-500 to-emerald-500",
       skills: [
-        { name: "PostgreSQL", level: 87 },
-        { name: "MongoDB", level: 85 },
-        { name: "Redis", level: 78 },
-        { name: "Firebase", level: 83 },
+        { name: "MySQL", level: 92 },
+        { name: "MongoDB", level: 90 },
+        { name: "SQLite", level: 85 },
       ],
     },
     {
       icon: Cloud,
       title: "DevOps & Cloud",
       color: "from-orange-500 to-red-500",
-      skills: [
-        { name: "Docker", level: 85 },
-        { name: "AWS", level: 80 },
-        { name: "CI/CD", level: 82 },
-        { name: "Kubernetes", level: 75 },
-      ],
+      skills: [{ name: "Docker", level: 80 }],
     },
     {
       icon: Smartphone,
       title: "Mobile",
       color: "from-indigo-500 to-purple-500",
-      skills: [
-        { name: "React Native", level: 88 },
-        { name: "Flutter", level: 75 },
-        { name: "PWA", level: 90 },
-        { name: "Responsive Design", level: 95 },
-      ],
+      skills: [{ name: "React Native", level: 88 }],
     },
     {
       icon: Code2,
@@ -70,7 +67,8 @@ export function Skills() {
       color: "from-yellow-500 to-orange-500",
       skills: [
         { name: "Git / GitHub", level: 93 },
-        { name: "Figma", level: 85 },
+        { name: "Figma", level: 90 },
+        { name: "Trello", level: 98 },
         { name: "Jest / Testing", level: 87 },
         { name: "Agile / Scrum", level: 90 },
       ],
@@ -78,7 +76,10 @@ export function Skills() {
   ];
 
   return (
-    <section id="skills" className="relative py-24 bg-slate-900 overflow-hidden">
+    <section
+      id="skills"
+      className="relative py-24 bg-slate-900 overflow-hidden"
+    >
       {/* Animated background */}
       <motion.div
         className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
@@ -103,7 +104,8 @@ export function Skills() {
             </span>
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            Technologies et outils que je maîtrise pour créer des solutions innovantes
+            Technologies et outils que je maîtrise pour créer des solutions
+            innovantes
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4" />
         </motion.div>
@@ -135,7 +137,9 @@ export function Skills() {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex}>
                       <div className="flex justify-between mb-2">
-                        <span className="text-slate-300 text-sm">{skill.name}</span>
+                        <span className="text-slate-300 text-sm">
+                          {skill.name}
+                        </span>
                         <motion.span
                           initial={{ opacity: 0 }}
                           animate={isInView ? { opacity: 1 } : {}}
@@ -195,21 +199,26 @@ export function Skills() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-16"
         >
-          <h3 className="text-white text-center mb-8">Technologies utilisées</h3>
+          <h3 className="text-white text-center mb-8">
+            Technologies utilisées
+          </h3>
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              "React",
+              "React Js / Native",
               "Node.js",
               "TypeScript",
               "Tailwind",
+              "Bootstrap",
+              "Nest Js",
+              "Laravel",
               "Next.js",
               "MongoDB",
-              "PostgreSQL",
+              "SQLite",
+              "MySQL",
+              "Vue Js",
               "Docker",
-              "AWS",
               "Git",
               "Figma",
-              "GraphQL",
             ].map((tech, index) => (
               <motion.div
                 key={index}

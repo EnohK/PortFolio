@@ -23,8 +23,7 @@ export function Navigation() {
     { name: "À propos", href: "#about" },
     { name: "Projets", href: "#projects" },
     { name: "Compétences", href: "#skills" },
-    { name: "Témoignages", href: "#testimonials" },
-    { name: "Blog", href: "#blog" },
+    //{ name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -63,7 +62,7 @@ export function Navigation() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white">AE</span>
               </div>
-              <span className="text-white hidden sm:block">Koffi Ambroise ENOH</span>
+              <span className="text-white hidden sm:block">Ambroise ENOH</span>
             </motion.a>
 
             {/* Desktop Navigation */}
@@ -88,7 +87,11 @@ export function Navigation() {
                     <motion.div
                       layoutId="activeSection"
                       className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600"
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 380,
+                        damping: 30,
+                      }}
                     />
                   )}
                 </motion.a>
@@ -112,7 +115,11 @@ export function Navigation() {
               className="md:hidden text-white p-2 hover:bg-slate-800 rounded-lg transition-colors"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>

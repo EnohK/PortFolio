@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { ExternalLink, Github, Play } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
+import rottem_tomato from "@/assets/rottem_tomato.png";
 
 export function Projects() {
   const ref = useRef(null);
@@ -12,62 +13,81 @@ export function Projects() {
 
   const projects = [
     {
-      title: "Free ADS",
+      title: "ROTTEM ",
       description:
-        "Plateforme e-commerce complète avec paiement sécurisé, gestion de stock et tableau de bord administrateur.",
+        "ROTTEM est une application web innovante que j’ai conçue pour permettre aux utilisateurs de noter, commenter et découvrir des films de manière simple, intuitive et visuellement agréable.",
+      image: rottem_tomato,
+      technologies: ["Next Js", "MongoDB", "Tailwind", "TypeScript"],
+      demoUrl: "https://test-brox.vercel.app/",
+      githubUrl: "#",
+    },
+    {
+      title: "Show Time",
+      description:
+        "Show Time est une application web moderne conçue pour faciliter la découverte d’événements et la réservation de tickets en quelques clics. Elle offre une expérience fluide, sécurisée et accessible, permettant aux utilisateurs d’acheter leurs billets pour des concerts, festivals, conférences, soirées et autres événements directement en ligne.",
       image:
-        "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjg0Mzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind"],
+        "https://images.unsplash.com/photo-1759322945173-76b604965b2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBzZXR1cCUyMG1vZGVybnxlbnwxfHx8fDE3NjMzOTY3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      technologies: ["Full Nest Js ", "MongoDB", "Tailwind", "TypeScript"],
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Task Management App",
+      title: "Trello App Mobile",
       description:
-        "Application de gestion de tâches collaborative avec système de notifications en temps réel et calendrier intégré.",
+        "Trello App Mobile est une application mobile que j’ai développée pour offrir une solution simple, flexible et puissante de gestion de tâches, inspirée du fonctionnement de Trello. Elle permet aux utilisateurs d’organiser leurs projets, suivre l’avancement des activités et collaborer efficacement depuis leur smartphone.",
+      image:
+        "https://images.unsplash.com/photo-1759322945173-76b604965b2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBzZXR1cCUyMG1vZGVybnxlbnwxfHx8fDE3NjMzOTY3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      technologies: ["React Native ", "Trello API", "Tailwind", "TypeScript"],
+      demoUrl: "#",
+      githubUrl: "#",
+    },
+    {
+      title: "YOWL",
+      description:
+        "YOWL est une application web innovante que j’ai développée pour centraliser et gérer en un seul endroit les commentaires provenant de différentes plateformes (réseaux sociaux, sites web, marketplaces, YouTube, blogs…).",
       image:
         "https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYzMzA1ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["Vue.js", "Firebase", "TypeScript", "Vuetify"],
+      technologies: ["API Laravel", "Vue.js", "MySQL", "Tailwind"],
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Social Media Dashboard",
+      title: "Free ADS",
+      description:
+        "Free ADS est une application web de type marketplace que j’ai développée pour permettre aux utilisateurs de publier, gérer et consulter des annonces en ligne en toute simplicité. La plateforme offre une expérience fluide, un design moderne et des fonctionnalités puissantes pour connecter vendeurs et acheteurs rapidement.",
+      image:
+        "https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYzMzA1ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      technologies: ["Laravel", "MySQL", "Tailwind"],
+      demoUrl: "#",
+      githubUrl: "#",
+    },
+    {
+      title: "Post It",
       description:
         "Dashboard d'analyse pour réseaux sociaux avec graphiques interactifs et rapports automatisés.",
       image:
         "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzYzMzg1MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["React", "D3.js", "Express", "PostgreSQL"],
+      technologies: ["Vue.js", "Externe API", "Tailwind"],
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "AI Chat Assistant",
+      title: "Integration",
       description:
         "Assistant conversationnel alimenté par IA avec interface moderne et support multilingue.",
       image:
         "https://images.unsplash.com/photo-1759322945173-76b604965b2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBzZXR1cCUyMG1vZGVybnxlbnwxfHx8fDE3NjMzOTY3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["Next.js", "OpenAI", "Prisma", "TailwindCSS"],
+      technologies: ["HTML", "CSS", "PHP", "MySQL"],
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Portfolio Generator",
+      title: "TWP",
       description:
         "Générateur de portfolio automatique avec templates personnalisables et export en PDF.",
       image:
         "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjg0Mzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["Angular", "NestJS", "MySQL", "Docker"],
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "Weather Forecast App",
-      description:
-        "Application météo avec prévisions détaillées, cartes interactives et alertes personnalisées.",
-      image:
-        "https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYzMzA1ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["React Native", "Redux", "Weather API"],
+      technologies: ["Vue.js", "Trello API", "Tailwind"],
       demoUrl: "#",
       githubUrl: "#",
     },
@@ -169,7 +189,7 @@ export function Projects() {
                 {/* Content */}
                 <div className="p-6">
                   <h3 className="text-white mb-3">{project.title}</h3>
-                  <p className="text-slate-400 mb-4 text-sm leading-relaxed">
+                  <p className="line-clamp-5 overflow-hidden text-slate-400 mb-4 text-sm leading-relaxed ">
                     {project.description}
                   </p>
 
