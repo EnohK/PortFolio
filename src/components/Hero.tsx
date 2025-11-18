@@ -153,14 +153,16 @@ export function Hero() {
           >
             Voir mes projets
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-blue-500 text-blue-400 hover:bg-blue-500/10 shadow-lg"
-          >
-            <Download className="mr-2 h-4 w-4" />
-            Télécharger CV
-          </Button>
+          <motion.a href="/src/assets/CV_ENOH.pdf" download="CV_ENOH.pdf">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-blue-500 text-blue-400 hover:bg-blue-500/10 shadow-lg"
+            >
+              <Download className="mr-2 h-4 w-4" />
+              Télécharger CV
+            </Button>
+          </motion.a>
         </motion.div>
 
         {/* Social links */}

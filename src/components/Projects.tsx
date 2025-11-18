@@ -5,6 +5,8 @@ import { ExternalLink, Github, Play } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import rottem_tomato from "@/assets/rottem_tomato.png";
+import imageComments from "@/assets/comments.jpg";
+import imageTrello from "@/assets/trello.jpg";
 
 export function Projects() {
   const ref = useRef(null);
@@ -35,8 +37,7 @@ export function Projects() {
       title: "Trello App Mobile",
       description:
         "Trello App Mobile est une application mobile que j’ai développée pour offrir une solution simple, flexible et puissante de gestion de tâches, inspirée du fonctionnement de Trello. Elle permet aux utilisateurs d’organiser leurs projets, suivre l’avancement des activités et collaborer efficacement depuis leur smartphone.",
-      image:
-        "https://images.unsplash.com/photo-1759322945173-76b604965b2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBzZXR1cCUyMG1vZGVybnxlbnwxfHx8fDE3NjMzOTY3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: imageTrello,
       technologies: ["React Native ", "Trello API", "Tailwind", "TypeScript"],
       demoUrl: "#",
       githubUrl: "#",
@@ -45,8 +46,7 @@ export function Projects() {
       title: "YOWL",
       description:
         "YOWL est une application web innovante que j’ai développée pour centraliser et gérer en un seul endroit les commentaires provenant de différentes plateformes (réseaux sociaux, sites web, marketplaces, YouTube, blogs…).",
-      image:
-        "https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYzMzA1ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: imageComments,
       technologies: ["API Laravel", "Vue.js", "MySQL", "Tailwind"],
       demoUrl: "#",
       githubUrl: "#",
