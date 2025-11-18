@@ -2,6 +2,7 @@ import { motion, useScroll, useMotionValueEvent } from "motion/react";
 import { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "./ui/button";
+import cv from "@/assets/CV_ENOH.pdf";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,7 +100,7 @@ export function Navigation() {
             </div>
 
             {/* CTA Button */}
-            <motion.a href="/src/assets/CV_ENOH.pdf" download="CV_ENOH.pdf">
+            <motion.a href={cv} download="CV_ENOH.pdf">
               <div className="hidden md:block">
                 <Button
                   size="sm"

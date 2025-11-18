@@ -3,6 +3,7 @@ import { Download, ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 import image from "@/assets/enoh_image.jpeg";
+import cv from "@/assets/CV_ENOH.pdf";
 
 export function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -153,7 +154,7 @@ export function Hero() {
           >
             Voir mes projets
           </Button>
-          <motion.a href="/src/assets/CV_ENOH.pdf" download="CV_ENOH.pdf">
+          <motion.a href={cv} download="CV_ENOH.pdf">
             <Button
               size="lg"
               variant="outline"
