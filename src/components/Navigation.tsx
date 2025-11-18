@@ -99,15 +99,17 @@ export function Navigation() {
             </div>
 
             {/* CTA Button */}
-            <div className="hidden md:block">
-              <Button
-                size="sm"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-              >
-                <Download className="mr-2 h-4 w-4" />
-                CV
-              </Button>
-            </div>
+            <motion.a href="/src/assets/CV_ENOH.pdf" download="CV_ENOH.pdf">
+              <div className="hidden md:block">
+                <Button
+                  size="sm"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  CV
+                </Button>
+              </div>{" "}
+            </motion.a>
 
             {/* Mobile Menu Button */}
             <button
