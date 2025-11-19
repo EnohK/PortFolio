@@ -24,7 +24,6 @@ export function Navigation() {
     { name: "À propos", href: "#about" },
     { name: "Projets", href: "#projects" },
     { name: "Compétences", href: "#skills" },
-    //{ name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
   ];
 
